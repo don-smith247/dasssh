@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+nav{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-around;
+    background: rgba(36, 7, 55, 1);  
+}
+/* @keyframes mk {
+    0%, 25%{
+        background-color: rgb(0, 255, 0);
+
+    }
+    50%, 100%{
+        background-color:black ;
+        
+    }
+} */
+.butt3{
+    border: none;
+    background: none;
+    cursor: pointer;
+   
+}
+.dash{
+    display: flex;
+    gap: 10px;
+}
+.dash h6{
+    color: white;
+}
+.board2 button{
+    border: none;
+    background: white;
+    cursor: pointer;
+    /* animation: mk infinite;  */
+}
+.board2 img{
+    animation: 1s mk infinite; 
+}
+.board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    gap: 30%;
+    background: rgba(162, 30, 242, 1);
+}
+.board1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+.board1 img{
+    width: 30px;
+}
+.board2 h1{
+    color: white;
+    font-weight: bolder;
+}
+.board2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.board1 h3{
+    color: white;
+    font-weight: bold;
+}
+.board2 img{
+    width: 45px;
+}
+
+.butt{
+    padding: 4%;
+    width: 17vw;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+}
+.butt2{
+    border: none;
+    background: none;
+    cursor: pointer;
+   
+
+}
+.invitation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+.invite{
+    background-color:  black;
+    height: 10vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+.invite h5{
+    color: white;
+    font-weight: bold;
+}
+.invite p{
+    color: white;
+     font-weight: bold;
+    font-size: 10px;
+}
+.invite2{
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+     gap: 40px;
+}
+.invite2 h2{
+    font-weight: bolder;
+    
+}
+.Coin{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+.Coin1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Coin2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Coin2 h5{
+   color: rgba(254, 105, 61, 1); 
+}
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.invite2 p{
+    color: rgba(254, 105, 61, 1);
+
+}
+.Coin2{
+    width: 150px;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    height: 150px;
+    box-shadow: 5px 5px 50px grey;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    display: none;
+    justify-content: right;
+    position: absolute;
+    background-color: white;
+    left: 855px;
+
+}
+.yu{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.yo{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-transform: capitalize;
+}
+.toggle{
+    display: flex;
+}
+#arrow {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    filter: grayscale(100%) brightness(0%) sepia(100%) hue-rotate(200deg) saturate(7500%) contrast(100%);
+    transition: filter 0.5s ease; 
+  }
+  #arrow.blinking {
+    animation: blink-animation 1s infinite;
+  }
+  @keyframes blink-animation {
+    50% {
+      opacity: 0;
+    }
+  }
+@media screen and (max-width: 950px) {
+    .Coin{
+        gap: 70px;
+    }
+    .invite{
+        width: 100%;
+    }
+    .butt{
+        width: 35vw;
+    }
+    .Home{
+        gap: 15px;
+    }
+    .Coin2{
+        width: 190px;
+    }
+    .all{
+        position: absolute;
+        left: 185px;
+    }
+
+}
