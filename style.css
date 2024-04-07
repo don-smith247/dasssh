@@ -201,9 +201,10 @@ nav{
 #arrow {
     width: 50px;
     height: 50px;
+    filter: invert(79%) sepia(80%) saturate(2692%) hue-rotate(283deg) brightness(95%) contrast(91%);
+  }
+  #blinkButton {
     cursor: pointer;
-    filter: grayscale(100%) brightness(0%) sepia(100%) hue-rotate(200deg) saturate(7500%) contrast(100%);
-    transition: filter 0.5s ease; 
   }
   #arrow.blinking {
     animation: blink-animation 1s infinite;
@@ -213,6 +214,7 @@ nav{
       opacity: 0;
     }
   }
+
 @media screen and (max-width: 950px) {
     .Coin{
         gap: 70px;
@@ -232,6 +234,9 @@ nav{
     .all{
         position: absolute;
         left: 185px;
+    }
+    body{
+        overflow-x: hidden;
     }
 
 }

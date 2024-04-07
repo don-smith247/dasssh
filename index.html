@@ -39,14 +39,13 @@
             <div class="board1">
                 <h3>Current Mined Coin</h3>
                 <div class="board2">
-                    <img src="./traffic mining.png" alt="" id="arrow">
-                    <h1>0.00</h1>
-                    <h4>Cera Coin</h4>
+                    <img src="./traffic mining.png" alt="Arrow" id="arrow">
+                    <p style="color: white;">Mined: <span id="minedCoins">0.0000</span></p>
                 </div>
                 <div><button class="butt">Mining rate 0.5 Cera/hr</button></div>
                
             </div>
-            <div><button class="butt2"><img style="width: 70%;" src="./Mining button.png" alt=""></button></div>
+            <div><button class="butt2" id="blinkButton" ><img style="width: 100px;" src="./Mining button.png" alt=""></button></div>
         </div>
     </section>
     <section>
@@ -104,27 +103,6 @@
             </div>
         </footer>
     </section>
-    <script>
-        const arrow = document.getElementById('arrow');
-let blinkingInterval;
-
-arrow.addEventListener('click', () => {
-  if (arrow.classList.contains('blinking')) {
-    clearInterval(blinkingInterval);
-    arrow.classList.remove('blinking');
-    arrow.style.filter = 'grayscale(100%) brightness(0%) sepia(100%) hue-rotate(200deg) saturate(7500%) contrast(100%)';
-  } else {
-    arrow.classList.add('blinking');
-    blinkingInterval = setInterval(() => {
-      arrow.style.filter = arrow.style.filter === 'none' ? 'grayscale(100%) brightness(0%) sepia(100%) hue-rotate(200deg) saturate(7500%) contrast(100%)' : 'none';
-    }, 1000);
-  }
-});
-function dropdown(){
-    var butt3 = document.querySelector(".all")
-    butt3.classList.toggle("toggle")
-}
-    </script>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
